@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap');
+
+:root{
+    --background: #7000FF;
+    --rec :#C0F;
+    --background-nav: rgba(217, 217, 217, 0.49);
+    --text : #FFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--background);
+    overflow-x: hidden;
+}
+
+header{
+    position: fixed;
+    z-index: 1000;
+    width: 99%;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--background-nav);
+}
+
+header nav{
+    margin: 0 auto;
+    padding: 0;
+    justify-content: center;
+}
+
+header nav ul{
+    display: inline-block;
+    list-style: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin: 30px;
+}
+
+header nav ul li a{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--text);
+}
+
+header nav ul li a:hover{
+    color: var(--background);
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--background);
+}
+
+header nav button{
+    position: absolute;
+    margin-top: 2vh;
+    margin-left: 30vh;
+    padding: 10px;
+    border-radius: 10px;
+    border : 3px solid var(--background-nav);
+    background: transparent;
+}
+
+header nav button a{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--text);
+}
+
+header nav button:hover{
+    color: var(--background);
+    background: var(--text);
+}
+
+header nav button a:hover{
+    color: var(--background);
+}
+
+.homePage .rec1{
+    position: absolute;
+    width: 279px;
+    height: 214px;
+    background: #C0F;
+    filter: blur(42px);
+    margin: 195px 214px;
+}
+
+header .toggle_btn{
+    position: absolute;
+    margin-left : 180vh;
+    font-size: 20px;
+    border: 2px solid var(--background-nav);
+    padding: 10px;
+    color: var(--text);
+    border-radius: 10px;
+    margin-top: 19px;
+    display: none;
+}
+
+header .Drop_Down_Menu{
+    display: none;
+}
+
+.homePage .rec2{
+    position: absolute;
+    width: 559px;
+    height: 569px;
+    background: #C0F;
+    filter: blur(75px);
+    margin: 256px 1058px;
+}
+
+.homePage .rec3{
+    position: absolute;
+    width: 279px;
+    height: 214px;
+    margin: 670px 295px;
+    background: #C0F;
+    filter: blur(42px);
+}
+
+.homePage .blurFilter{
+    position: absolute;
+    width: 1920px;
+    height: 953px;
+    flex-shrink: 0;
+    background: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(150px);
+}
+
+.about{
+    position: absolute;
+    margin-top: 953px;
+}
+
+/* ------------ set media ------------- */
+
+@media (max-width: 1440px){
+    body{
+        overflow-x: hidden;
+    }
+    .homePage .blurFilter{
+        height: 1130px;
+    }
+}
+
+@media (max-width: 1024px){
+    body{
+        overflow-x: hidden;
+    }
+    .homePage .rec1{
+        width: 499px;
+        height: 384px;
+        margin: 217px 288px;
+    }
+    .homePage .rec3{
+        width: 469px;
+        height: 364px;
+        margin: 1074px 317px;
+    }
+    .homePage .rec2{
+        width: 659px;
+        height: 699px;
+        margin: 354px 1058px;
+    }
+    .homePage .blurFilter{
+        height: 1613px;
+    }
+}
+
+@media (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+    .homePage .rec3 {
+        width: 469px;
+        height: 364px;
+        margin: 1464px 397px;
+    }
+    .homePage .rec2 {
+        width: 659px;
+        height: 699px;
+        margin: 574px 1058px;
+    }
+    .homePage .blurFilter {
+        height: 2143px;
+    }
+}
+
+@media (max-width: 425px){
+    body{
+        overflow-x: hidden;
+    }
+    header nav{
+        display: none;
+    }
+    .homePage .rec1 {
+       display: none;
+    }
+    .homePage .rec3 {
+        display: none;
+    }
+    .homePage .rec2 {
+        width: 849px;
+        height: 1179px;
+        margin: 1254px 768px;
+        filter: blur(250px);
+    }
+    .homePage .blurFilter {
+        height: 3423px;
+    }
+    header .toggle_btn{
+        display: block;
+        font-size: 15vh;
+        margin-top: 10vh;
+        margin-left: 160vh;
+        padding: 4vh;
+        border: 0;
+    }
+
+    header .Drop_Down_Menu{
+        padding-top: 10px;
+        padding-bottom: 50px;
+        display: none;
+        background-color: var(--background-nav);
+        width: 100%;
+        position: absolute;
+        top: 40vh;
+        text-align: center;
+        left: 0vh;
+        overflow: hidden;
+        transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    header .Drop_Down_Menu li{
+        padding: 5vh;
+        list-style: none;
+    }
+
+    header .Drop_Down_Menu li a{
+        font-family: 'DM Sans', sans-serif;
+        letter-spacing: 1vh;
+        color: var(--text);
+        text-decoration: none;
+        font-size: 10vh;
+    }
+
+    header .Drop_Down_Menu button{
+        border: 5px solid var(--background-nav);
+        background: transparent;
+        padding: 20px;
+        border-radius: 30px;
+    }
+
+    header .Drop_Down_Menu button a{
+        font-size: 10vh;
+        font-family: 'DM Sans', sans-serif;
+        letter-spacing: 1vh;
+        color: var(--text);
+        text-decoration: none;
+    }
+    header .Drop_Down_Menu.open{
+        display: block;
+    }
+}
+
+@media (max-width: 375px){
+    body{
+        overflow-x: hidden;
+    }
+    .homePage .rec2 {
+        margin: 1254px 618px;
+    }
+    .homePage .blurFilter {
+        height: 3423px;
+    }
+    header .toggle_btn {
+        margin-left: 140vh;
+    }
+}
+
+@media (max-width: 320px){
+    body{
+        overflow-x: hidden;
+    }
+    .homePage .rec2 {
+        margin: 1254px 468px;
+    }
+    .homePage .blurFilter {
+        height: 3423px;
+    }
+    header .toggle_btn {
+        margin-left: 115vh;
+    }
+}
