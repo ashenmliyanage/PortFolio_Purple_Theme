@@ -1,306 +1,225 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-:root{
-    --background: #7000FF;
-    --rec :#C0F;
-    --background-nav: rgba(217, 217, 217, 0.49);
-    --text : #FFF;
-}
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
+@font-face {
+    font-family: 'Post No Bills Jaffna ExtraBold Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Post No Bills Jaffna ExtraBold Regular'), url('/font/PostNoBillsJaffna-ExtraBold.woff') format('woff');
+    }
 
 body{
-    background-color: var(--background);
+    background-color: #7000FF;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
 }
 
 header{
-    position: fixed;
-    z-index: 1000;
-    width: 99%;
+    background-color: rgba(255, 255, 255, 0.35);
+    text-align: center;
     margin: 10px;
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--background-nav);
+    padding: 10px;
+    z-index: ;
 }
-
-header nav{
-    margin: 0 auto;
-    padding: 0;
-    justify-content: center;
-}
-
 header nav ul{
-    display: inline-block;
     list-style: none;
 }
 
 header nav ul li{
-    display: inline-block;
-    margin: 30px;
+    display: inline;
+    margin: 0 20px;
 }
 
 header nav ul li a{
-    font-family: 'DM Sans', sans-serif;
+    text-decoration: none;
+    color: #FFF;
+    font-family: "DM Sans";
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
-    text-decoration: none;
-    color: var(--text);
+    line-height: normal;
+    letter-spacing: 1.44px;
 }
 
-header nav ul li a:hover{
-    color: var(--background);
-    padding-bottom: 10px;
-    border-bottom: 2px solid var(--background);
-}
-
-header nav button{
+header nav ul h5{
+    display: flex;
+    width: 50%;
     position: absolute;
-    margin-top: 2vh;
-    margin-left: 30vh;
+    display: inline;
+    margin: -5px -100px;
+    color: #FFF;
+    font-size: 18px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+}
+
+header nav ul h5 button{
+    margin-left: 10px;
     padding: 10px;
-    border-radius: 10px;
-    border : 3px solid var(--background-nav);
-    background: transparent;
+    border-radius: 50px;
+    border: none;
 }
 
-header nav button a{
-    font-family: 'DM Sans', sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    text-decoration: none;
-    color: var(--text);
-}
-
-header nav button:hover{
-    color: var(--background);
-    background: var(--text);
-}
-
-header nav button a:hover{
-    color: var(--background);
-}
-
-.homePage .rec1{
+header nav .logo{
+    justify-content: center;
+    text-align: center;
+    display: flex;
     position: absolute;
-    width: 279px;
-    height: 214px;
+    height: 65px;
+    width: 65px;
+    background-color: black;
+    margin: -21px 0px;
+}
+
+header nav .logo h1{
+    color: #FFF;
+    font-family: 'Post No Bills Jaffna ExtraBold Regular';
+    font-size: 40px;
+    margin-top: 5px;
+    letter-spacing: 2.7px;
+    text-align: left;
+}
+
+.rec1 {
+    position: absolute;
+    width: 359px;
+    height: 254px;
     background: #C0F;
     filter: blur(42px);
-    margin: 195px 214px;
+    z-index: -1;
+    margin: 139px 134px;
 }
 
-header .toggle_btn{
+.rec2 {
     position: absolute;
-    margin-left : 180vh;
-    font-size: 20px;
-    border: 2px solid var(--background-nav);
-    padding: 10px;
-    color: var(--text);
-    border-radius: 10px;
-    margin-top: 19px;
-    display: none;
-}
-
-header .Drop_Down_Menu{
-    display: none;
-}
-
-.homePage .rec2{
-    position: absolute;
-    width: 559px;
-    height: 569px;
+    width: 709px;
+    height: 649px;
     background: #C0F;
     filter: blur(75px);
-    margin: 256px 1058px;
+    z-index: -1;
+    margin: 130px 1060px;
 }
 
-.homePage .rec3{
+.rec3 {
     position: absolute;
     width: 279px;
     height: 214px;
-    margin: 670px 295px;
     background: #C0F;
+    z-index: -1;
     filter: blur(42px);
+    margin: 650px 300px;
 }
 
-.homePage .blurFilter{
+.rec4 {
+    position: absolute;
+    width: 290px;
+    height: 191px;
+    background: #C0F;
+    filter: blur(0px);
+    z-index: -2;
+    margin: 400px 1232px;
+}
+
+.pane{
     position: absolute;
     width: 1920px;
-    height: 953px;
-    flex-shrink: 0;
+    height: 1080px;
     background: rgba(255, 255, 255, 0.01);
     backdrop-filter: blur(150px);
+    z-index: -1;
 }
 
-.about{
+.homePage{
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2.7px;
+    text-align: left;
+}
+
+.homePage h2 {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 45px;
+    font-weight: 400;
+    margin: 203px 100px;
+    margin-bottom: 0px;
+}
+
+.homePage h1 strong {
+    color: #1DE3FD;
+    font-weight: 600;
+    font-size: 65px;
+    letter-spacing: 3.9px;
+    margin-left: 95px;
+    margin-bottom: 0px;
+}
+
+.homePage #position {
+    color: #FFF;
+    font-size: 65px;
+    font-weight: 400;
+    letter-spacing: 3.9px;
+    margin: 0px 90px;
+}
+
+.homePage h3 {
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 22px;
+    font-weight: 400;
+    margin-left: 95px;
+}
+
+.homePage #ProfilePic{
     position: absolute;
-    margin-top: 953px;
+    width: 920px;
+    height: 900px;
+    z-index: -1;
+    margin: -60vh 100vh;
+    
+} 
+
+
+.homePage button{
+    position: absolute;
+    margin: 0px 100px;
+    padding: 15px 35px;
+    border-radius: 17px;
+    border: 1px solid #7C9A00;
+    background-color: #1DE3FD;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1.44px;
+    cursor: pointer;
+    margin-top: 10vh;
 }
 
-/* ------------ set media ------------- */
+@keyframes moveFromStartToEnd {
+    0% { margin: -43vh 117vh; }
+    100% { margin: -40vh 117vh; }
+  }
+  
+  @keyframes moveFromEndToStart {
+    0% { margin: -40vh 113vh; }
+    100% { margin: -43vh 117vh; }
+  }
 
-@media (max-width: 1440px){
-    body{
-        overflow-x: hidden;
-    }
-    .homePage .blurFilter{
-        height: 1130px;
-    }
+.homePage .figma img{
+    position: absolute;
+    width: 124px;
+    height: 130px;
+    margin: -65vh 96vh;
 }
 
-@media (max-width: 1024px){
-    body{
-        overflow-x: hidden;
-    }
-    .homePage .rec1{
-        width: 499px;
-        height: 384px;
-        margin: 217px 288px;
-    }
-    .homePage .rec3{
-        width: 469px;
-        height: 364px;
-        margin: 1074px 317px;
-    }
-    .homePage .rec2{
-        width: 659px;
-        height: 699px;
-        margin: 354px 1058px;
-    }
-    .homePage .blurFilter{
-        height: 1613px;
-    }
+.homePage .figma img {
+    width: 746px;
+    height: 496px;
+    animation-name: moveFromStartToEnd;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
 }
 
-@media (max-width: 768px){
-    body{
-        overflow-x: hidden;
-    }
-    .homePage .rec3 {
-        width: 469px;
-        height: 364px;
-        margin: 1464px 397px;
-    }
-    .homePage .rec2 {
-        width: 659px;
-        height: 699px;
-        margin: 574px 1058px;
-    }
-    .homePage .blurFilter {
-        height: 2143px;
-    }
-}
 
-@media (max-width: 425px){
-    body{
-        overflow-x: hidden;
-    }
-    header nav{
-        display: none;
-    }
-    .homePage .rec1 {
-       display: none;
-    }
-    .homePage .rec3 {
-        display: none;
-    }
-    .homePage .rec2 {
-        width: 849px;
-        height: 1179px;
-        margin: 1254px 768px;
-        filter: blur(250px);
-    }
-    .homePage .blurFilter {
-        height: 3423px;
-    }
-    header .toggle_btn{
-        display: block;
-        font-size: 15vh;
-        margin-top: 10vh;
-        margin-left: 160vh;
-        padding: 4vh;
-        border: 0;
-    }
-
-    header .Drop_Down_Menu{
-        padding-top: 10px;
-        padding-bottom: 50px;
-        display: none;
-        background-color: var(--background-nav);
-        width: 100%;
-        position: absolute;
-        top: 40vh;
-        text-align: center;
-        left: 0vh;
-        overflow: hidden;
-        transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    }
-
-    header .Drop_Down_Menu li{
-        padding: 5vh;
-        list-style: none;
-    }
-
-    header .Drop_Down_Menu li a{
-        font-family: 'DM Sans', sans-serif;
-        letter-spacing: 1vh;
-        color: var(--text);
-        text-decoration: none;
-        font-size: 10vh;
-    }
-
-    header .Drop_Down_Menu button{
-        border: 5px solid var(--background-nav);
-        background: transparent;
-        padding: 20px;
-        border-radius: 30px;
-    }
-
-    header .Drop_Down_Menu button a{
-        font-size: 10vh;
-        font-family: 'DM Sans', sans-serif;
-        letter-spacing: 1vh;
-        color: var(--text);
-        text-decoration: none;
-    }
-    header .Drop_Down_Menu.open{
-        display: block;
-    }
-}
-
-@media (max-width: 375px){
-    body{
-        overflow-x: hidden;
-    }
-    .homePage .rec2 {
-        margin: 1254px 618px;
-    }
-    .homePage .blurFilter {
-        height: 3423px;
-    }
-    header .toggle_btn {
-        margin-left: 140vh;
-    }
-}
-
-@media (max-width: 320px){
-    body{
-        overflow-x: hidden;
-    }
-    .homePage .rec2 {
-        margin: 1254px 468px;
-    }
-    .homePage .blurFilter {
-        height: 3423px;
-    }
-    header .toggle_btn {
-        margin-left: 115vh;
-    }
-}
