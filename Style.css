@@ -18,7 +18,7 @@ body{
 }
 
 header{
-    background-color: rgba(255, 255, 255, 0.35);
+    /* background-color: rgba(255, 255, 255, 0.35); */
     text-align: center;
     margin: 10px;
     padding: 10px;
@@ -223,3 +223,90 @@ header nav .logo h1{
 }
 
 
+@media (max-width: 1440px) {
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .homePage #ProfilePic {
+        position: absolute;
+        width: 890px;
+        height: 870px;
+        z-index: -1;
+        margin: -53vh 100vh;
+    }
+
+    @keyframes moveFromStartToEnd {
+        0% { margin: -52vh 117vh; }
+        100% { margin: -45vh 117vh; }
+      }
+      
+      @keyframes moveFromEndToStart {
+        0% { margin: -52vh 117vh; }
+        100% { margin: -45vh 117vh; }
+      }
+
+    .pane {
+        width: 1765px;
+        overflow-x: hidden;
+    }
+
+    .rec2 {
+        margin: 160px 840px;
+        overflow-x: hidden;
+    }
+
+    .pane{
+        overflow: hidden;
+    }
+
+    .homePage h2 {
+        font-size: 40px;
+        position: relative;
+        top: 11vh;
+    }
+
+    .homePage h1 strong {
+        font-size: 60px;
+        position: relative;
+        top: 11vh;
+    }
+
+    .homePage #position {
+        font-size: 60px;
+        position: relative;
+        top: 10vh;
+    }
+
+    .homePage h3 {
+        color: rgba(255, 255, 255, 0.70);
+        font-size: 17px;
+        font-weight: 400;
+        margin-left: 95px;
+        position: relative;
+        top: 10vh;
+    }
+
+    .homePage button {
+        position: relative;
+        top: 12vh;
+    }
+
+    header{
+        width: 97%;
+    }
+
+    header nav ul{
+        width: 97%;
+        position: relative;
+    left: 16vh;
+    }
+
+    header nav ul h5{
+        width: 150px;
+        position: relative;
+        left: 34vh;
+    }
+
+}
